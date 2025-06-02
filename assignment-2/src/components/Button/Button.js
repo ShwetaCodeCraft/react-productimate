@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 const Button = styled.button`
-  background-color: ${props => (props.primary ? '#3498db' : '#ccc')};
-  color: ${props => (props.primary ? 'white' : 'black')};
   padding: 10px 20px;
-  margin: 5px;
+  font-size: 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
+  background-color: ${props => props.primary ? '#007bff' : '#ccc'};
+  color: ${props => props.primary ? 'white' : 'black'};
 `;
 
 export default Button;
